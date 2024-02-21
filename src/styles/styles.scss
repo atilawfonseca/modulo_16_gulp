@@ -1,0 +1,96 @@
+@use 'config/reset.scss';
+@use 'config/container';
+@use 'config/variaveis';
+
+header {
+    background-color: variaveis.$cor_barra_superior;
+    color: variaveis.$cor_section_clara;
+    padding: .5em 0px;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        nav 
+        {
+            padding: 0.5em;
+            ul {
+
+                li {
+                    list-style: none;
+                    display: inline;
+                    margin-left: 1em;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        text-transform: uppercase;
+                        padding: .5em 1em;
+                        border-radius: 5px;
+
+                        &:hover {
+                            background-color: variaveis.$cor_btn;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding-top: 3em;
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1em;
+        padding: 2em 0px;
+
+        img {
+            border-radius: 5px;
+            width: 500px;
+            max-width: 95vw;
+        }
+        .texto {
+            max-width: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            h2 {
+                padding-bottom: 1em;
+                text-transform: uppercase;
+            }
+            p {
+                text-align: justify;
+            }
+
+            ul li {
+                list-style: none;
+                padding: .5em 0.5em;
+                
+                p 
+                {
+                    text-align: justify;
+                    span {
+                        font-weight: bolder;
+                    }
+                }
+                
+            }
+        }
+
+    }
+}
+#cavalo {
+    background-color: variaveis.$cor_sec_cav;
+    color: variaveis.$cor_section_clara;
+}
+
+footer {
+    background-color: variaveis.$cor_footer;
+    padding: 1em 0.5em;
+    color: white;
+    text-align: center;
+}
